@@ -8,13 +8,120 @@
     <link rel="icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/libs/reset.css">
     <link rel="stylesheet" href="/styles.css">
-    <title>Document</title>
+    <title>Codelex LP grid</title>
 </head>
 <body>
-    <h1>
-        Hello World
-    </h1>
-    <img src="/assets/images/cat.jpeg" alt="" width="300">
+    <section class = "mt-10">
+        <div class = "menu-wrap">
+            <input type="checkbox" class = "toggler">
+            <div class = "hamburger"><div></div></div>
+            <div class = "menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href = "#">Works</a></li>
+                            <li><a href = "#">Blog</a></li>
+                            <li><a href = "#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "main__grid-container">
+            <div class = "main__navbar">
+                <a href = "#" class = "navbar--text">Works</a>
+                <a href = "#" class = "navbar--text">Blog</a>
+                <a href = "#" class = "navbar--text">Contact</a>
+            </div>
+            <div class = "flex__col main__textbox">
+                <h2 class = "mb-40">Hi, I am John, Creative Technologist</h2>
+                <p class = "mb-40">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class = "button mb-70">
+                    <p class = "button--text">Download Resume</p>
+                </div>
+            </div>
+            <div class = "flex__col main__picture">
+                <img class = "main__picture--width"src = "assets/images/main-logo.svg" alt = "logo">
+            </div>
+        </div>
+    </section>
+    <section class = "recent">
+        <div class = "flex__container flex__col mt-20">
+            <div class = "flex__row flex--space-between sm-center-x">
+                <h4 class = "title--white">Recent posts</h4>
+                <h4 class = "title--blue sm-screen-hide">View all</h4>
+            </div>
+            <div class = "recent__cards gap-20 flex--center-x mb-40">
+                <div class = "recent__card">
+                    <h5 class = "recent__card--title mb-20">Making a design system from scratch</h5>
+                    <div class = "flex__row recent__card--gap mb-10">
+                        <p>12 Feb 2020</p>
+                        <p>|</p>
+                        <p>Design, Pattern</p>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class = "recent__card">
+                    <h5 class = "recent__card--title mb-20">Creating pixel perfect icons in Figma</h5>
+                    <div class = "flex__row recent__card--gap mb-10">
+                        <p>12 Feb 2020</p>
+                        <p>|</p>
+                        <p>Figma, Icon Design</p>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "featured">
+        <div class = "flex__container flex__col gap-30 pt-30 mb-40 sm-center-y">
+            <h4 class = "mb-20">Featured works</h4>
+            <div class = "gap-40 featured__card mb-30">
+                <img class = "featured__image" src = "assets/images/featured-card1.svg" alt = "featured card 1">
+                <div class = "flex__col">
+                    <h3 class = "featured__card-title mb-10">Designing Dashboards</h3>
+                    <div class = "flex__row gap-20 mb-10">
+                        <div class = "featured__year flex--center-x flex--center-y">2020</div>
+                        <p class = "featured__title--gray">Dashboard</p>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <div class = "gap-40 featured__card mb-30">
+                <img class = "featured__image" src = "assets/images/featured-card2.svg" alt = "featured card 2">
+                <div class = "flex__col">
+                    <h3 class = "featured__card-title mb-10">Vibrant Portraits of 2020</h3>
+                    <div class = "flex__row gap-20 mb-10">
+                        <div class = "featured__year flex--center-x flex--center-y">2018</div>
+                        <p class = "featured__title--gray">Illustration</p>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <div class = "flex__row gap-40 featured__card mb-80">
+                <img class = "featured__image" src = "assets/images/featured-card3.svg" alt = "featured card 3">
+                <div class = "flex__col">
+                    <h3 class = "featured__card-title mb-10">36 Days of Malayalam type</h3>
+                    <div class = "flex__row gap-20 mb-10">
+                        <div class = "featured__year flex--center-x flex--center-y">2018</div>
+                        <p class = "featured__title--gray">Typography</p>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class = "flex__container flex__col flex--center-x flex--center-y pt-50 pb-50 gap-20">
+            <div class = "flex__row gap-40">
+                <img src = "assets/images/footer-icon-fb.svg" alt = "facebook icon">
+                <img src = "assets/images/footer-icon-ig.svg" alt = "instagram icon">
+                <img src = "assets/images/footer-icon-twitter.svg" alt = "twitter icon">
+                <img src = "assets/images/footer-icon-linkedin.svg" alt = "linkedin icon">
+            </div>
+            <p>Copyright ©2020 All rights reserved </p>
+        </div>
+    </section>
 
 
     <script src="/scripts.js"></script>

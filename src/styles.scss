@@ -1,3 +1,460 @@
-body {
-  background-color: antiquewhite;
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+  font-family: 'Heebo';
+  font-style: normal;
+  color: #21243D;
+}
+
+// TEXT FORMAT
+
+h2{
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+}
+h4{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+}
+p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.title--white{
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.title--blue{
+  text-align: right;
+  color: #00A8CC;
+}
+.featured__title--gray{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #8695A4;
+}
+
+
+// SPACINGS
+
+.mt-10{
+  margin-top: 10px;
+}
+.mt-15{
+  margin-top: 15px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.mb-40{
+  margin-bottom: 40px;
+}
+.mb-70{
+  margin-bottom: 70px;
+}
+.mb-80{
+  margin-bottom: 80px;
+}
+.pt-20{
+  padding-top: 20px;
+}
+.pt-30{
+  padding-top: 30px;
+}
+.pt-50{
+  padding-top: 50px;
+}
+.pb-50{
+  padding-bottom: 50px;
+}
+.gap-10{
+  gap: 10px;
+}
+.gap-20{
+  gap: 20px;
+}
+.gap-30{
+  gap: 30px;
+}
+.gap-40{
+  gap: 40px;
+}
+
+// FLEXBOX
+
+.flex__container{
+  margin: auto;
+  width: 70%;
+  display: flex;
+}
+.flex__row{
+  display: flex;
+  flex-direction: row;
+}
+.flex__col{
+  display: flex;
+  flex-direction: column;
+}
+.flex--center-x{
+  display: flex;
+  justify-content: center;
+}
+.flex--center-y{
+  display: flex;
+  align-items: center;
+}
+.flex--space-between{
+  display: flex;
+  justify-content: space-between;
+}
+
+// MAIN PAGE GRID
+.main__grid-container{
+  display: grid;
+  margin: auto;
+  width: 70%;
+  grid-template-columns: 6fr 4fr;
+  min-width: 600px;
+}
+.main__navbar{
+  display: flex;
+  color: white;
+  grid-column-start: 2;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  height: 5vh;
+  margin-bottom: 140px;
+}
+.main__textbox{
+  grid-row-start: 2;
+  grid-column-start: 1;
+  padding: 24px;
+  padding-top: 30px;
+  min-width: 310px;
+}
+.main__picture{
+  grid-row-start: 2;
+  grid-column-start: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+// MAIN PAGE
+.main__picture--width{
+  width: 70%;
+}
+.navbar--text{
+font-weight: 500;
+font-size: 20px;
+line-height: 29px;
+color: #000000;
+text-decoration: none;
+}
+a.navbar--text:hover{
+  color: #FF6464;
+  text-shadow: 1px 1px 3px #825a5a;
+  transition: 0.3s ease;
+}
+// BUTTON
+.button{
+  width: 208px;
+  height: 47px;
+  padding: 10px 20px;
+  background-color: #FF6464;
+  border-radius: 2px;
+  transition: 0.3s ease;
+  &:hover{
+    box-shadow: 5px 5px 10px #d03030;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+}
+.button--text{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+// RECENT page
+.recent{
+  background-image: url("assets/images/recent-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 70px;
+  padding-top: 30px;
+}
+.recent__cards{
+  display: flex;
+  flex-direction: row;
+}
+.recent__card{
+  width: calc(50% - 10px);
+  min-width: 310px;
+  background-color: #FFFFFF;
+  padding: 24px;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+}
+.recent__card--title{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38px;
+}
+.recent__card--gap{
+  gap: 5%;
+}
+
+// FEATURED PAGE
+
+.featured__card{
+  border-bottom: 1px solid #E0E0E0;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+.featured__card-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  color: #21243D;
+}
+.featured__year{
+  width: 62px;
+  height: 25px;
+  background: #142850;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+}
+.featured__image{
+  width: 246px;
+}
+// burger hidden
+.menu-wrap{
+  display: none;
+}
+
+
+// MEDIA QUERIES
+// <----------------------->
+
+@media only screen and (max-width: 992px){
+  .main__navbar{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+  .main__grid-container{
+    width: 95%;
+  }
+  .flex__container{
+    width: 95%;
+  }
+  .main__grid-container{
+    grid-template-columns: 70% 30%;
+  }
+  .main__picture--width{
+  width: 100%;
+}
+}
+
+// GALVENAIS BREAKPOINT, kad viss saplūst 1 kolonnā
+@media only screen and (max-width: 768px){
+  .main__grid-container{
+    width: 100%;
+    grid-template-columns: 100%;
+    min-width: 250px;
+  }
+  .main__navbar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%; 
+    justify-content: center;
+    visibility: hidden;
+  }
+  .main__textbox{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%; 
+    text-align: center;
+    align-items: center;
+  }
+  .main__picture{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%; 
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .main__picture--width{
+    width: 50%;
+  }
+  .recent__cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recent__card{
+    width: 100%;
+    max-width: 450px;
+  }
+  .featured__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .featured__image{
+    width: 100%;
+  }
+  .sm-center-y{
+    align-items: center;
+  }
+  .sm-center-x{
+    justify-content: center;
+  }
+  .sm-screen-hide{
+    display: none;
+  }
+  // HAMBURGER MENU
+  .menu-wrap{
+    display:block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+  .menu-wrap .toggler{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+  .menu-wrap .hamburger{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    background-color: #b4b4b469;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // lines inside hamburger
+  .menu-wrap .hamburger > div{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in;
+    &::before, &::after{
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      width: 100%;
+      height: 2px;
+      background-color: #000000;
+    }
+    &::after{
+      top: 10px;
+    }
+  }
+  // toggler animantion
+  .menu-wrap .toggler:checked + .hamburger > div{
+    transform: rotate(135deg);
+    &::before, &::after{
+      top: 0;
+      transform: rotate(90deg);
+    }
+  }
+  // Rotate on hover when checked
+  .menu-wrap .toggler:checked:hover + .hamburger > div{
+    transform: rotate(225deg);
+  }
+  // STYLING POP UP MENU
+  .menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // SHOW MENU
+  .menu-wrap .toggler:checked ~ .menu{
+    visibility: visible;
+    & > div{
+      transform: scale(1);
+      transition-duration: 0.6s;
+      & > div{
+        opacity: 1;
+        transition: opacity 0.4s ease;
+      }
+    }
+  }
+  .menu-wrap .menu > div{
+    background-color: #727578ce;
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    & > div{
+      text-align: center;
+      max-width: 90vh;
+      max-height: 100vh;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      & ul li{
+        list-style: none;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-weight: 800;
+        padding: 1rem;
+        & a{
+          color: inherit;
+          text-decoration: none;
+          transition: color 0.4s ease;
+        }
+      }
+    }
+  }
 }
